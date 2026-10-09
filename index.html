@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js"></script>
+    <!-- tailwind  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- bootstrap  -->
+</head>
+<body class="bg-blue-400 flex items-center justify-center h-screen">
+    <div class="bg-blue-500 h-120 w-80 shadow-2xl  rounded-xl">
+        <h1 class="font-bold text-white text-center text-2xl">Calculator</h1>
+        <input type="text" id="result" class="w-70 h-10 bg-white ml-5 mt-5">
+        <div class="w-[80%] flex flex-wrap ml-8 mt-5 gap-5">
+            <button class="bg-white/50 text-white border rounded-md h-12 w-12"onclick="displaynumber(8)">8</button>
+            <button class="bg-white/50 text-white border rounded-md h-12 w-12"onclick="displaynumber(9)">9</button>
+            <button class="bg-white/50 text-white border rounded-md h-12 w-12"onclick="displaynumber(7)">7</button>
+            <button class="bg-orange-400 text-white border rounded-md h-12 w-12"onclick="displaynumber('*')">X</button>
+
+            <button class="bg-white/50 text-white border rounded-md h-12 w-12" onclick="displaynumber(4)">4</button>
+            <button class="bg-white/50 text-white border rounded-md h-12 w-12" onclick="displaynumber(5)">5</button>
+            <button class="bg-white/50 text-white border rounded-md h-12 w-12" onclick="displaynumber(6)">6</button>
+            <button class="bg-orange-400 text-white border rounded-md h-12 w-12" onclick="displaynumber('-')">-</button>
+
+            <button class="bg-white/50 text-white border rounded-md h-12 w-12" onclick="displaynumber(1)">1</button>
+            <button class="bg-white/50 text-white border rounded-md h-12 w-12" onclick="displaynumber(2)">2</button>
+            <button class="bg-white/50 text-white border rounded-md h-12 w-12" onclick="displaynumber(3)">3</button>
+            <button class="bg-orange-400 text-white border rounded-md h-12 w-12" onclick="displaynumber('+')">+</button>
+
+           <button class="bg-red-500 text-white  rounded-md h-12 w-12"onclick="cleared()">AC</button>
+           <button class="bg-white/50 text-white border rounded-md h-12 w-12" onclick="displaynumber(0)">0</button>
+           <button class="bg-orange-400 text-white border rounded-md h-12 w-12" onclick="displaynumber('/')">/</button>
+           <button class="bg-green-500 text-white  rounded-md h-12 w-12" onclick="operator()">=</button>
+
+           <button class="bg-white/50 text-white border rounded-md h-12 w-80" onclick="backbutton()"><ion-icon name="backspace-outline" class="text-2xl"></ion-icon></button>
+        </div>
+    </div>
+   
+<script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
